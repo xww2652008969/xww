@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-05-16 21:07:43 / 修改时间：21:25:29" itemprop="dateCreated datePublished" datetime="2022-05-16T21:07:43+08:00">2022-05-16</time>
+              <time title="创建时间：2022-05-16 21:07:43" itemprop="dateCreated datePublished" datetime="2022-05-16T21:07:43+08:00">2022-05-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-07 19:01:32" itemprop="dateModified" datetime="2022-06-07T19:01:32+08:00">2022-06-07</time>
+              </span>
 
           
 
@@ -184,7 +190,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="adb命令"><a href="#adb命令" class="headerlink" title="adb命令"></a>adb命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">adb reboot bootloader //重启bl模式</span><br><span class="line">adb reboot fastboot   //重启fastbootd模式</span><br><span class="line">adb reboot recovery   //重启recovery</span><br><span class="line">adb shell             //shell模式</span><br><span class="line">adb devices           //查找设备</span><br></pre></td></tr></table></figure>
+          <h1 id="adb命令"><a href="#adb命令" class="headerlink" title="adb命令"></a>adb命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">adb reboot bootloader //重启bl模式</span><br><span class="line">adb reboot fastboot   //重启fastbootd模式</span><br><span class="line">adb reboot recovery   //重启recovery</span><br><span class="line">adb shell             //shell模式</span><br><span class="line">adb devices           //查找设备</span><br><span class="line">adb connect           //远程调试</span><br><span class="line">adb shell dumpsys activity activities | findstr mResumedActivity //获取顶层Activity</span><br></pre></td></tr></table></figure>
 
 <h1 id="fastboot命令"><a href="#fastboot命令" class="headerlink" title="fastboot命令"></a>fastboot命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fastboot reboot bootloader //重启bl模式</span><br><span class="line">fastboot reboot fastboot   //重启fastbootd模式</span><br><span class="line">fastboot reboot recovery   //重启recovery</span><br><span class="line">fastboot devices           //查找设备</span><br><span class="line">fastboot flash img partition //分区刷鞋</span><br><span class="line">fastboot -w               //四清</span><br></pre></td></tr></table></figure>
 
